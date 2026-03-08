@@ -375,6 +375,9 @@ FEATURES
 .book {
   width: 25%;
   padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   transition: all 300ms ease;
 }
 
