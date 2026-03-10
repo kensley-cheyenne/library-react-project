@@ -1,12 +1,10 @@
 import React, { useState } from "react";
-import { books } from "../data";
 import Book from "../components/ui/Book";
 
 const Books = ({ books: initialBooks }) => {
   const [books, setBooks] = useState(initialBooks);
 
   function filterBooks(filter) {
-    console.log("Filtering books...");
     if (filter === "LOW_TO_HIGH") {
       setBooks(
         books.slice().sort(
